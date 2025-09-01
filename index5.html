@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS position property</title>
+    <style>
+      .container {
+        height: 800px;
+        border: 1px solid black;
+        position: relative;
+      }
+      .container2 {
+        height: 800px;
+        border: 1px solid black;
+      }
+      img {
+        height: 150px;
+        width: 150px;
+      }
+      #box1 {
+        position: static;
+        top: 50px;
+      }
+      #box2 {
+        position: relative;
+      }
+      #box3 {
+        position: absolute;
+        z-index: -1;
+      }
+      #box4 {
+      }
+      #box5 {
+        position: fixed;
+        top: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>CSS position property</h1>
+    <div class="container">
+      <img src="image1.avif" alt="first" id="box1" />
+      <img src="image2.avif" alt="second" id="box2" />
+      <img src="image3.avif" alt="third" id="box3" />
+      <img src="image4.avif" alt="fourth" id="box4" />
+      <img src="image5.avif" alt="fifth" id="box5" />
+    </div>
+    <div class="container2"></div>
+  </body>
+</html>
