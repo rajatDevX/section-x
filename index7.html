@@ -5,8 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Flexbox</title>
     <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
       body {
         width: 100vw;
+
+        border: 2px solid black;
+        height: 100vh;
       }
       .container {
         border: 1px solid red;
@@ -14,7 +22,7 @@
         flex-direction: row;
         justify-content: start;
 
-        height: 700px;
+        height: 80%;
         width: 100%;
       }
       .item {
@@ -25,9 +33,12 @@
       #box1 {
         background-color: red;
         flex-shrink: 2;
+        flex-grow: 2;
+        order: 1;
       }
       #box2 {
         background-color: green;
+        flex-grow: 3;
       }
       #box3 {
         background-color: blue;
