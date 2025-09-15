@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Pseudo-Classes Demo</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        padding: 20px;
+      }
+
+      /* :hover, :active, :focus on button */
+      button {
+        background: blue;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        cursor: pointer;
+        margin-bottom: 20px;
+      }
+      button:hover {
+        background: red;
+      }
+      button:active {
+        background: green;
+      }
+      input:focus {
+        border: 2px solid orange;
+        outline: none;
+      }
+
+
+      a:link {
+        color: blue;
+      }
+      a:visited {
+        color: purple;
+      }
+      a:hover {
+        color: red;
+      }
+      a:active {
+        color: green;
+      }
+
+      /* :first-child, :last-child, :nth-child */
+      ul li:first-child {
+        color: red;
+      }
+      ul li:last-child {
+        color: blue; /
+      }
+      ul li:nth-child(2n) {
+        background: lightgray;
+      }
+      ul li:nth-child(2n+1) {
+        background: lightyellow;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Pseudo-Classes Demo</h2>
+
+    <h3>1. Button Example</h3>
+    <button>Click Me</button>
+    <br /><br />
+    <input type="text" placeholder="Click here to see :focus effect" />
+
+    <h3>2. Link Example</h3>
+    <a href="https://www.google.com" target="_blank">Visit Google</a>
+
+    <h3>3. List Example</h3>
+    <ul>
+      <li>Item 1 (first-child red)</li>
+      <li>Item 2 (even gray)</li>
+      <li>Item 3 (odd yellow)</li>
+      <li>Item 4 (even gray)</li>
+      <li>Item 5 (odd yellow)</li>
+      <li>Item 6 (even gray)</li>
+      <li>Item 7 (odd yellow)</li>
+      <li>Item 8 (last-child blue)</li>
+    </ul>
+  </body>
+</html>
